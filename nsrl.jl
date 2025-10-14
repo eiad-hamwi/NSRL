@@ -1,16 +1,13 @@
-using Beamlines, BeamTracking
+using Beamlines, BeamTracking, AtomicAndPhysicalConstants
 
 
-Q = 73.0
+
+
+Ta = Species("181Ta+73")
+EK = 343.8772962930509e6
 NN = 181
-E0 = 168.5146860368865e9 / NN
-EK = 0.3438772962930509e9
-EE = (EK + E0) * NN
 
-Ta = Species("181 tantalum +73", Q, E0 * NN, 0.5, 0.0, 0.0, 0.0, HADRON)
-
-
-R = BeamTracking.E_to_R(Ta, EE)
+R = BeamTracking.E_to_R(Ta, Ta.mass + EK * NN)
 
 
 @eles begin
