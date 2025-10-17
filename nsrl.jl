@@ -1,4 +1,4 @@
-using Beamlines, BeamTracking, AtomicAndPhysicalConstants
+using Beamlines, AtomicAndPhysicalConstants
 
 
 
@@ -7,7 +7,7 @@ Ta = Species("181Ta+73")
 EK = 343.8772962930509e6
 NN = 181
 
-R = BeamTracking.E_to_R(Ta, Ta.mass + EK * NN)
+E =  Ta.mass + EK * NN
 
 
 @eles begin
@@ -56,7 +56,7 @@ end
 
 nsrl = Beamline([BD6, D1, Q1, D2, Q2, D3, bend1, D4, bend2, D5, bend3, D6, Q3, 
 D7, Q4, D8, O1, D9, Q5, D10, O2, D11, Q6, D12, Q7, D13, Q8, D14], 
-R_ref = R, species_ref = Ta)
+E_ref = E, species_ref = Ta)
 
 
 for ele in nsrl.line
