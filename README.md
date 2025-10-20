@@ -16,3 +16,5 @@ EOF
 
 echo 'export LD_LIBRARY_PATH="$CONDA_PREFIX/lib:$LD_LIBRARY_PATH"' > "$CONDA_PREFIX/etc/conda/activate.d/env_vars.sh"
 ```
+
+Make sure to start a new terminal session before using PythonCall in the Julia notebook.
