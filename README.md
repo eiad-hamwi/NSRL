@@ -2,8 +2,13 @@
 NSRL lattice file description and uniform beam optimization using SciBmad ecosystem.
 Tutorial notebooks for IJulia and IPython usage.
 
+## Installation of Xopt in Python within a Conda environment
 
-## Installation of Xopt for PythonCall within a Conda environment
+```
+conda install -c conda-forge xopt
+```
+
+## Installation of Xopt in Julia (through PythonCall) within a Conda environment
 
 ```
 conda install -c conda-forge xopt
