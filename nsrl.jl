@@ -1,8 +1,3 @@
-using Beamlines, AtomicAndPhysicalConstants
-
-
-
-
 Ta = Species("181Ta+73")
 EK = 343.8772962930509e6
 NN = 181
