@@ -197,7 +197,7 @@ function hist(coords;
               )
 
     # Coords should be  [N_particles x N_turns x 6]
-    _shape = coords.size
+    _shape = size(coords)
 
     
     # Check that `coords` is 3D
